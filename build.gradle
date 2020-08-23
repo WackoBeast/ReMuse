@@ -22,6 +22,18 @@ allprojects {
     }
 }
 
+buildscript {
+    repositories {
+
+        maven { url "https://chaquo.com/maven" }
+    }
+    dependencies {
+
+        classpath "com.chaquo.python:gradle:8.0.1"
+    }
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
